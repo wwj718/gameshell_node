@@ -11,12 +11,6 @@ pip3 install requests
 
 # 开始
 
-将该仓库下的 `helloworld.py` 复制到 `~/games/`。
-
-创建 `~/launcher/Menu/GameShell/helloworld.sh`
-
-```bash
-python3 ~/games/helloworld.py -fullscreen -surf
-```
-
-图标: 将`helloworld.png`(80x80)放进 `~/launcher/skin/default/Menu/GameShell/` 文件夹
+*  将该仓库下的 `helloworld.py` 复制到 `~/games/`。
+*  将 `helloworld.sh` 复制到 `~/launcher/Menu/GameShell/`
+*  图标: 将`helloworld.png`(80x80)放进 `~/launcher/skin/default/Menu/GameShell/` 文件夹

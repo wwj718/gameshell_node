@@ -19,7 +19,7 @@ black = (0, 0, 250)
 # ADAPTER_IP = "192.168.31.148"
 
 
-def to_adapter(ip, message):
+def _to_adapter(ip, message):
     if ip:
         try:
             requests.get(f'https://{ip}:12358/api/message/eim?message={message}',
@@ -30,25 +30,25 @@ def to_adapter(ip, message):
 
 def handle_key(ip, key):
     if key == pygame.K_DOWN:
-        to_adapter(ip, "K_DOWN")
+        _to_adapter(ip, "K_DOWN")
     if key == pygame.K_UP:
-        to_adapter(ip, "K_UP")
+        _to_adapter(ip, "K_UP")
     if key == pygame.K_RIGHT:
-        to_adapter(ip, "K_RIGHT")
+        _to_adapter(ip, "K_RIGHT")
     if key == pygame.K_LEFT:
-        to_adapter(ip, "K_LEFT")
+        _to_adapter(ip, "K_LEFT")
     if key == pygame.K_u:
-        to_adapter(ip, "K_u")
+        _to_adapter(ip, "K_u")
     if key == pygame.K_i:
-        to_adapter(ip, "K_i")
+        _to_adapter(ip, "K_i")
     if key == pygame.K_j:
-        to_adapter(ip, "K_j")
+        _to_adapter(ip, "K_j")
     if key == pygame.K_k:
-        to_adapter(ip, "K_k")
+        _to_adapter(ip, "K_k")
     if key == pygame.K_SPACE:  # Select
-        to_adapter(ip, "K_SPACE")
+        _to_adapter(ip, "K_SPACE")
     if key == pygame.K_RETURN:  # Start
-        to_adapter(ip, "K_RETURN")
+        _to_adapter(ip, "K_RETURN")
     # PC["LK1"] = pygame.K_h
     # PC["LK5"] = pygame.K_l
 

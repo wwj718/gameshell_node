@@ -65,7 +65,7 @@ class AdapterHelper:
             str(e)
 
     def advertise(self):
-        name = f'{socket.gethostname()}-{str(uuid.uuid4())[:8]}'
+        name = f'{socket.gethostname()}-gameshell-key'
         # 默认广播出去的是 usb的ip，不是wifi的ip ： https://github.com/clockworkpi/launcher/blob/e22a3286f3/sys.py/libs/DBUS/__init__.py
         address = nw0.advertise(name, address=self.get_local_ip())  
         return address
@@ -108,6 +108,9 @@ while True:
             
             if event.key == pygame.K_ESCAPE:
                 sys.exit()
+            if event.key == pygame.K_RETURN:
+                # 接受新的ip连接
+                helper.run()
 
     screen.fill(black)
     pygame.display.flip()

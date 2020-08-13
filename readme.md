@@ -74,4 +74,4 @@ while True:
 python3 ~/games/holleworld.py -fullscreen -surf
 ```
 
-图标: 将`holleworld.png`(80x80)放进 `~/launcher/skin/sefault/Menu/GameShell` 文件夹
+图标: 将`helleworld.png`(80x80)放进 `~/launcher/skin/default/Menu/GameShell/` 文件夹

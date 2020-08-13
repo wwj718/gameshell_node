@@ -6,7 +6,7 @@ run codelab adapter node in gameshell.
 
 ```bash
 sudo apt install python3-pygame
-pip3 install requests
+pip3 install requests networkzero codelab_adapter_client
 ```
 
 # 开始
